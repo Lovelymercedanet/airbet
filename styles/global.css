@@ -1,0 +1,32 @@
+:root {
+  --background-app: #1f1f1f;
+  --primary-color: #333333;
+  --red-color: #ff0000;
+  --green-color: #97be5a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: "Gotham";
+  font-style: italic;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: underline;
+  color: blue;
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../fonts/Gotham/GothamBold.ttf") format("ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
