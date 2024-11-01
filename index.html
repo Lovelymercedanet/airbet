@@ -7,14 +7,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/modal.css" />
   </head>
   <body>
     <div class="app">
       <header class="header">
         <h1 class="header__headling">airbet</h1>
       </header>
-      <div class="previous">
-      </div>
+      <div class="previous"></div>
       <div class="main">
         <div class="prediction prediction-hidden"></div>
         <div class="animation-load animation-hidden" id="animation-load"></div>
@@ -22,6 +22,18 @@
       <footer class="footer" onclick="clickOnStart()">
         <img class="footer__btn" src="./images/power.svg" />
       </footer>
+      <div class="modal">
+        <div class="modal__box">
+          <input
+            class="modal__input"
+            type="text"
+            placeholder="введите пароль"
+          />
+          <button class="modal__btn" type="submit" onclick="login(event)">
+            log in
+          </button>
+        </div>
+      </div>
     </div>
     <script src="./app.js"></script>
   </body>

@@ -102,16 +102,15 @@ function clickOnStart() {
     }, 5000)
 }
 
+// log in
+function login(event) {
+    event.preventDefault();
+    let correctPassword = 'aviator'
 
-
-
-
-
-
-
-// Движение и удаление последнего элемента
-// let lastItem = previousContainer.lastElementChild;
-// lastItem.classList.add('item--last');
-// setTimeout(() => {
-//     lastItem.remove()
-// }, 1000)
+    if (document.querySelector('.modal__input').value === correctPassword) {
+        document.querySelector('.modal').classList.add('closed');
+    } else {
+        document.querySelector('.modal__input').value = '';
+        document.querySelector('.modal__input').placeholder = 'неверный пароль';
+    }
+}
